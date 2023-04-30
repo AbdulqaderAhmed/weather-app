@@ -25,7 +25,7 @@ export default function App() {
   }, [query]);
 
   return (
-    <div className="container flex flex-col gap-2 text-center">
+    <div className="container flex flex-col gap-2 text-center absolute top-32">
       <h1 className="text-2xl text-center font-bold underline">Weather</h1>
 
       <div className="mx-auto">

@@ -6,7 +6,11 @@ export default function Search({ setSearch, sumbitBtn }) {
       <input
         type="text"
         className="border-2 border-solid m-5 border-teal-950 rounded-xl shadow-md shadow-blue-400 px-2"
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) =>
+          e.target.value !== "" && e.target.value !== " "
+            ? setSearch(e.target.value)
+            : setSearch("Ethiopia")
+        }
       />
       <button
         type="submit"

@@ -1,4 +1,3 @@
-import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -17,9 +16,7 @@ export default function App() {
   };
 
   const fetchData = async () => {
-    const res = await axios(
-      `http://api.weatherapi.com/v1/current.json?q=${query}&key=${APIKEY}`
-    );
+    const res = await Http(`/current.json?q=${query}&key=${APIKEY}`);
     setData(res.data);
   };
 

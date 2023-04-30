@@ -30,7 +30,7 @@ export default function App() {
     <div
       className={`${
         bg && (bg <= 15 ? "bg-cloudy" : "bg-sunny")
-      } ease-linear duration-700 flex flex-col space-y-3 justify-center text-center items-center h-screen`}
+      } bg-slate-500 ease-linear duration-700 flex flex-col space-y-3 justify-center text-center items-center h-screen`}
     >
       <h1 className="text-2xl text-center font-bold underline text-white">
         Weather
